@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helpline - AI-Driven Detection of Cyberbullying</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&family=Orbitron:wght@400;700&family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='helpline.css') }}">
+    <!-- <link rel = "stylesheet" href = "/static/helpline.css"> -->
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="logo">AI-Driven Detection of Cyberbullying</div>
+        <nav>
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('user_support') }}">User Support</a>
+            <a href="{{ url_for('helpline') }}">Helpline</a>
+            <a href="{{ url_for('about_us') }}">About Us</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <h1>Helpline</h1>
+    <section class="helpline-container">
+        <div class="helpline-info">
+            <h2>Need Immediate Help?</h2>
+            <p>If you or someone you know is experiencing cyberbullying, contact us immediately:</p>
+            <p><strong>Phone:</strong> +1-800-CYBER-BULLY (1-800-292-3728)</p>
+        </div>
+           <!-- Floating Messages -->
+    <div class="message message1">"Together, let's end cyberbullying for good."</div>
+    <div class="message message2">"Your words can heal or hurt—choose to be kind"</div>
+    <div class="message message3">"Stop hate and Spread Kindness"</div>
+        <form id="helplineForm" method = "post" action = "https://script.google.com/macros/s/AKfycbw7SuSAQutJqgoaWdEPvfHm7ttgfoQR-a-B_NP2aEttoOHSeSQmlAIfTRFALSK9jtXgsw/exec">
+            <h3>Submit a Complaint</h3>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="Email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="Phone" placeholder="Optional">
+
+            <label for="complaint">Complaint:</label>
+            <textarea id="complaint" name="Complaint" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        Privacy Policy | &copy; 2025 AI-Driven Detection of Cyberbullying. All Rights Reserved. -- CHRIS JORDAN J --
+    </footer>
+
+</body>
+</html>

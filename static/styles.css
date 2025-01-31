@@ -1,0 +1,400 @@
+/* body {
+    font-family: 'Inter', sans-serif;
+    background: radial-gradient(circle, rgb(248, 248, 248) 0%, rgb(133, 217, 238) 100%);
+    margin: 0;
+    padding: 0;
+    color: #2c3e50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    background: #1d232b;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.6rem;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    font-size: 1.2rem;
+    font-family: 'Audiowide', sans-serif;
+    margin-left: 20px;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+    font-weight: bold;
+    
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+header nav a:hover {
+    background: #ff105f;
+}
+
+
+h1 {
+    font-family: 'Orbitron', serif;
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: #1d232b;
+    text-align: center;
+}
+
+textarea {
+    width: 80%;
+    max-width: 600px;
+    height: 150px;
+    border: 2px solid #34495e;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    color: #34495e;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    resize: none;
+    outline: none;
+}
+
+button {
+    margin-top: 20px;
+    padding: 15px 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #194861, #1d232b);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 300%;
+    height: 100%;
+   background: linear-gradient(90deg, #0ffbfb, rgba(70, 177, 198, 0.7), rgba(36, 72, 156, 0.5));
+    transition: transform 0.5s ease;
+    transform: translateX(-100%);
+    z-index: 0;
+}
+
+button:hover::before {
+    transform: translateX(0);
+}
+
+button span {
+    position: relative;
+    z-index: 1;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 15px;
+    border: 2px solid #34495e;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 1.2rem;
+    color: #34495e;
+    text-align: center;
+}
+
+.metric {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.metric-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 20px;
+    border-radius: 5px;
+    text-align: right;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.progress-bar.toxic {
+    background-color: #f54242;
+}
+
+.progress-bar.obscene {
+    background-color: #f57c42;
+}
+
+.progress-bar.insult {
+    background-color: #f5c042;
+}
+
+.progress-bar.very-toxic {
+    background-color: #f59642;
+}
+
+.progress-bar.hate {
+    background-color: #42a5f5;
+}
+
+.progress-bar.threat {
+    background-color: #7e57c2;
+}
+
+.progress-bar.neutral {
+    background-color: #66bb6a;
+} 
+
+
+footer {
+    width: 100%;
+    background: #1d232b;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: auto;
+} 
+ */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: radial-gradient(circle, rgb(248, 248, 248) 0%, rgb(133, 217, 238) 100%);
+    margin: 0;
+    padding: 0;
+    color: #2c3e50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    margin: 0;
+    padding: 15px 20px;
+    box-shadow: none;
+    width: 100%;
+    background: #1d232b;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    font-size: 1.2rem;
+    font-family: 'Audiowide', sans-serif;
+    margin-left: 20px;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+    font-weight: bold;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+header nav a:hover {
+    background: #ff105f;
+}
+
+h1 {
+    font-family: 'Orbitron', serif;
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: #1d232b;
+    text-align: center;
+}
+
+/* Flexbox container for textarea and result */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Stretch both elements to the same height */
+    gap: 20px; /* Space between textarea and result */
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px; /* Space between content and button */
+}
+
+/* Textarea */
+textarea {
+    width: 48%; /* Keep the width the same */
+    height: 400px; /* Set height to match result box */
+    border: 2px solid #34495e;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    color: #34495e;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    resize: none;
+    outline: none;
+}
+
+/* Result container */
+#result {
+    width: 48%; /* Keep the width the same */
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid #34495e;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    color: #34495e;
+    text-align: center;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    height: 400px; /* Set height to match textarea */
+    overflow-y: auto; /* Allow scrolling if the content overflows */
+}
+#result h4{
+    margin-top: 3px;
+}
+/* Button */
+button {
+    margin-top: 20px;
+    padding: 15px 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #194861, #1d232b);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 300%;
+    height: 100%;
+    background: linear-gradient(90deg, #0ffbfb, rgba(70, 177, 198, 0.7), rgba(36, 72, 156, 0.5));
+    transition: transform 0.5s ease;
+    transform: translateX(-100%);
+    z-index: 0;
+}
+
+button:hover::before {
+    transform: translateX(0);
+}
+
+button span {
+    position: relative;
+    z-index: 1;
+}
+
+.metric {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.metric-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 20px;
+    border-radius: 5px;
+    text-align: right;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.progress-bar.toxic {
+    background-color: #f54242;
+}
+
+.progress-bar.obscene {
+    background-color: #f57c42;
+}
+
+.progress-bar.insult {
+    background-color: #f5c042;
+}
+
+.progress-bar.very-toxic {
+    background-color: #f59642;
+}
+
+.progress-bar.identity-hate {
+    background-color: #42a5f5;
+}
+
+.progress-bar.threat {
+    background-color: #7e57c2;
+}
+
+.progress-bar.neutral {
+    background-color: #66bb6a;
+} 
+
+
+footer {
+    width: 100%;
+    background: #1d232b;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: auto;
+} 

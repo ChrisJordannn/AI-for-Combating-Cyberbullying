@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - AI-Driven Detection of Cyberbullying</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&family=Orbitron:wght@400;700&family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='aboutus.css') }}">
+    <!-- <link rel="stylesheet" href="/static/aboutus.css"> -->
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="logo">AI-Driven Detection of Cyberbullying</div>
+        <nav>
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('user_support') }}">User Support</a>
+            <a href="{{ url_for('helpline') }}">Helpline</a>
+            <a href="{{ url_for('about_us') }}">About Us</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <section class="about-container">
+        <h1>About Us</h1>
+        <div class="mission">
+            <h2>Our Mission</h2>
+            <p>
+                Our mission is to create a safer online environment by leveraging the power of artificial intelligence 
+                to detect and mitigate cyberbullying. We are dedicated to fostering a culture of respect, inclusivity, and 
+                kindness in the digital space.
+            </p>
+        </div>
+        <div class="team">
+            <h2>Meet the Team</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <h3>Chris Jordan</h3>
+                    <p>Founder & CEO: An aspiring CSE undergrad who Leads the vision for creating a safer digital environment.</p>
+                </div>
+                <div class="team-member">
+                    <h3>Sanjana Jella</h3>
+                    <p>Front-End Developer: A passionate CSE student who Designs user-friendly and accessible interfaces.</p>
+                </div>
+                <div class="team-member">
+                    <h3>Giridharan H</h3>
+                    <p>Machine Learning Support: A driven AIML undergrad whoDevelops AI algorithms for detecting cyberbullying.</p>
+                </div>
+                <div class="team-member">
+                    <h3>Chandan R</h3>
+                    <p>Review Chair: A motivated AIML undergrad who Ensures ethical and inclusive AI practices.</p>
+                </div>
+            </div>
+        </div>
+        <div class="values">
+            <h2>Our Core Values</h2>
+            <ul>
+                <li><b>Integrity</b>: Ensuring transparency in our AI-driven processes.</li>
+                <li><b>Innovation</b>: Harnessing cutting-edge technology to tackle cyberbullying.</li>
+                <li><b>Empathy</b>: Building solutions with a focus on real-world impact.</li>
+                <li><b>Collaboration</b>: Partnering with educators, policymakers, and NGOs.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        Privacy Policy | &copy; 2025 AI-Driven Detection of Cyberbullying. All Rights Reserved. -- CHRIS JORDAN J --
+    </footer>
+</body>
+</html>

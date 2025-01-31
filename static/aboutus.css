@@ -1,0 +1,118 @@
+/* General Body Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background: radial-gradient(circle, rgb(248, 248, 248) 0%, rgb(133, 217, 238) 100%);
+    margin: 0;
+    padding: 0;
+    color: #2c3e50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    background: #1d232b;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.6rem;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    font-size: 1.0rem;
+    font-family: 'Audiowide', sans-serif;
+    margin-left: 20px;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+header nav a:hover {
+    background: #ff105f;
+}
+
+/* Main Content */
+.about-container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Orbitron', serif;
+    font-size: 2.5rem;
+    color: #1d232b;
+}
+
+.mission, .team, .values {
+    margin: 20px 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.team-members {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.team-member {
+    text-align: left;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.team-member h3 {
+    margin: 10px 0 5px;
+    color: #1d232b;
+    font-size: 1.5rem;
+}
+
+.team-member p {
+    margin: 0;
+    color: #34495e;
+    font-size: 1.1rem;
+}
+
+.values ul {
+    list-style: none;
+    padding: 0;
+}
+
+.values li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #34495e;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background: #1d232b;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: auto;
+}
