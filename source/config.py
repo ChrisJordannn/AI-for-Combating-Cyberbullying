@@ -1,5 +1,5 @@
 EMBEDDING_DIMENSION = 100
-#EMBEDDING_FILE_LOC = 'C:/Users/jordanj/Desktop/ToxicComentAnalysisProject/model/glove/glove.6B.' + str(EMBEDDING_DIMENSION) + 'd.txt'
+EMBEDDING_FILE_LOC = 'C:/Users/jordanj/Desktop/ToxicComentAnalysisProject/model/glove/glove.6B.' + str(EMBEDDING_DIMENSION) + 'd.txt'
 TRAINING_DATA_LOC = 'C:/Users/jordanj/Desktop/ToxicComentAnalysisProject/dataset/train.csv'
 TEST_DATA_LABEL = 'C:/Users/jordanj/Desktop/ToxicComentAnalysisProject/dataset/test_labels.csv'
 TEST_DATA_COMMENTS = 'C:/Users/jordanj/Desktop/ToxicComentAnalysisProject/dataset/test.csv'
